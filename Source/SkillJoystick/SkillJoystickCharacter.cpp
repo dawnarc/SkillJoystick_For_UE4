@@ -9,6 +9,7 @@
 #include "GameFramework/PlayerController.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Materials/Material.h"
+#include "Components/SkeletalMeshComponent.h"
 
 ASkillJoystickCharacter::ASkillJoystickCharacter()
 {
@@ -53,6 +54,11 @@ ASkillJoystickCharacter::ASkillJoystickCharacter()
 	// Activate ticking in order to update the cursor every frame.
 	PrimaryActorTick.bCanEverTick = true;
 	PrimaryActorTick.bStartWithTickEnabled = true;
+
+	if (GetMesh())
+	{
+		GetMesh()->SetReceivesDecals(false);
+	}
 }
 
 void ASkillJoystickCharacter::Tick(float DeltaSeconds)
