@@ -1,4 +1,7 @@
 # SkillJoystick_For_UE4
-A Unreal Engine 4 based skill joystick system what's like Arena Of Valor.
-
+A Unreal Engine 4 based skill joystick system likes Legends Mobile.  
 Achieved with HUD, not UMG.
+
+### Showcase
+
+![showcase](./showcase.gif)
